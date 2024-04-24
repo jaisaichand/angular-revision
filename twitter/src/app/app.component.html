@@ -1,0 +1,18 @@
+<app-header (changeCounterEmitter)="changeHandler($event)" [counter]="counter" >
+
+  <p>aniruddho</p>
+</app-header>
+<div>fcghjklghf</div>
+<p>fghjk</p>
+
+<div>
+  <input type="text" [(ngModel)]="nameInput" />
+
+  <p *ngIf="nameInput!=''; else tyuyu" >Hi {{nameInput}}</p>
+  <ng-template #tyuyu>
+    <p>Enter something in the input re </p>
+  </ng-template>
+  <div *ngFor="let nam of names" >
+    {{nam}}
+  </div>
+</div>
